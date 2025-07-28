@@ -1,10 +1,16 @@
-body {
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: black;
-  color: white;
-  overflow-x: hidden;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  line-height: 1.8;
+  font-size: 1.1rem;
+  padding-bottom: 100px;
 }
 
 #particles-js {
@@ -15,64 +21,113 @@ body {
 }
 
 .hero {
+  background: rgba(0, 0, 50, 0.6);
   text-align: center;
-  padding: 3rem 1rem;
-  background: rgba(0, 0, 50, 0.5);
+  padding: 60px 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: #00ccff;
+}
+
+.hero h2 {
+  font-size: 1.8rem;
+  color: #88e3ff;
+  margin-top: 10px;
 }
 
 .nav-links {
+  margin-top: 30px;
   list-style: none;
-  padding: 0;
   display: flex;
   justify-content: center;
-  gap: 2rem;
-  margin-top: 1rem;
+  flex-wrap: wrap;
+  gap: 25px;
 }
 
-.nav-links a {
-  color: #00ccff;
+.nav-links li a {
+  color: #fff;
   text-decoration: none;
   font-weight: bold;
+  font-size: 1.2rem;
+  padding: 10px;
+  border-radius: 6px;
+  background: rgba(0, 0, 0, 0.2);
+  transition: all 0.3s;
+}
+
+.nav-links li a:hover {
+  background: #00ccff;
+  color: #000;
 }
 
 .intro {
+  padding: 50px 20px;
   text-align: center;
-  padding: 3rem 1rem;
+}
+
+.intro p {
+  font-size: 1.3rem;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.9;
 }
 
 .cta-button {
-  display: inline-block;
-  padding: 1rem 2rem;
+  margin-top: 30px;
+  padding: 15px 30px;
+  font-size: 1.2rem;
   background: #00ccff;
-  color: black;
-  border-radius: 5px;
+  color: #000;
+  border: none;
+  border-radius: 8px;
   text-decoration: none;
-  margin-top: 1rem;
-  font-weight: bold;
+  display: inline-block;
 }
 
 .project-list {
   display: flex;
   flex-wrap: wrap;
+  gap: 30px;
   justify-content: center;
-  gap: 2rem;
-  margin-top: 2rem;
+  padding: 30px 0;
 }
 
 .project {
-  background: rgba(0, 0, 80, 0.7);
-  padding: 1.5rem;
-  border-radius: 10px;
-  width: 280px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid #00ccff;
+  padding: 20px;
+  border-radius: 12px;
+  width: 300px;
   text-align: center;
-  transition: transform 0.3s;
-}
-
-.project:hover {
-  transform: scale(1.05);
 }
 
 .project i {
   color: #00ccff;
-  margin-bottom: 1rem;
+  margin-bottom: 15px;
+}
+
+.project h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.project p {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+.project a {
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #00ccff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.project a:hover {
+  background: #00ccff;
+  color: #000;
 }
