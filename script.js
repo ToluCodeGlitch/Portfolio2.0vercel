@@ -1,3 +1,3 @@
 particlesJS.load('particles-js', 'particles.json', function () {
-  console.log('particles.js loaded - callback');
+  console.log('Particles.js loaded – background animated');
 });
