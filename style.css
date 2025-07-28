@@ -1,15 +1,15 @@
-/* General Reset */
+/* Global Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body, html {
+html, body {
   height: 100%;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #000;
-  color: #e0e0ff;
+  font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #000014;
+  color: #e3eaf0;
   scroll-behavior: smooth;
 }
 
@@ -19,80 +19,79 @@ body, html {
   width: 100%;
   height: 100%;
   z-index: -1;
-}
-
-/* Hero Section */
-.hero {
-  text-align: center;
-  padding: 100px 20px 60px;
-  background: transparent;
-}
-
-.name {
-  font-size: 4rem;
-  font-weight: 700;
-  color: #0ff;
-  text-shadow: 0 0 20px #0ff;
-}
-
-.title {
-  font-size: 1.6rem;
-  font-weight: 400;
-  color: #00d0ff;
-  text-shadow: 0 0 10px #00d0ff;
+  opacity: 0.6;
 }
 
 /* Navigation */
 nav {
-  background-color: rgba(0, 0, 50, 0.6);
+  background: rgba(0, 0, 30, 0.7);
   position: sticky;
   top: 0;
-  padding: 10px 0;
-  text-align: center;
-  z-index: 1000;
+  width: 100%;
+  z-index: 10;
+  padding: 15px 0;
 }
 
 nav ul {
-  list-style: none;
   display: flex;
   justify-content: center;
-  gap: 30px;
+  gap: 35px;
+  list-style: none;
 }
 
 nav a {
-  color: #ffffffcc;
+  color: #aad7ff;
+  font-size: 1rem;
   text-decoration: none;
-  font-size: 1.2rem;
-  transition: color 0.3s ease;
+  transition: color 0.3s;
 }
 
 nav a:hover {
   color: #0ff;
 }
 
-/* Sections */
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 120px 20px 60px;
+}
+
+.name {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #0ff;
+  text-shadow: 0 0 15px #0ff;
+}
+
+.title {
+  font-size: 1.4rem;
+  color: #aad7ff;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+/* Section Styling */
 .section {
-  padding: 80px 20px;
-  max-width: 1100px;
-  margin: 0 auto;
+  max-width: 1000px;
+  margin: 80px auto;
+  padding: 0 20px;
   text-align: center;
 }
 
 .section h2 {
-  font-size: 2.5rem;
-  color: #00d0ff;
+  font-size: 2rem;
+  color: #0ff;
   margin-bottom: 20px;
-  text-shadow: 0 0 10px #00d0ff;
+  text-shadow: 0 0 5px #00c8ff;
 }
 
 .section p {
-  font-size: 1.2rem;
+  font-size: 1.05rem;
   line-height: 1.8;
-  max-width: 800px;
-  margin: 0 auto;
+  color: #d6e6f2;
 }
 
-/* Projects */
+/* Projects Grid */
 .project-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -101,53 +100,52 @@ nav a:hover {
 }
 
 .project-card {
-  background: rgba(0, 0, 70, 0.4);
-  border: 1px solid #00d0ff88;
-  border-radius: 12px;
+  background: rgba(10, 20, 40, 0.6);
+  border: 1px solid #00d0ff55;
+  border-radius: 10px;
   padding: 20px;
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition: all 0.3s ease;
 }
 
 .project-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 0 25px #00d0ff;
+  transform: translateY(-6px);
+  box-shadow: 0 0 20px #00f0ff66;
 }
 
 .project-card img {
-  width: 60px;
-  height: 60px;
+  width: 55px;
   margin-bottom: 15px;
 }
 
 .project-card h3 {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: #0ff;
   margin-bottom: 10px;
 }
 
 .project-card p {
-  font-size: 1rem;
-  color: #ccc;
-  margin-bottom: 15px;
+  font-size: 0.95rem;
+  color: #bbb;
 }
 
 .project-card a {
-  color: #fff;
+  display: block;
+  margin-top: 12px;
+  font-size: 0.95rem;
+  color: #aad7ff;
   text-decoration: underline;
-  font-weight: bold;
 }
 
 /* Contact */
 .contact a {
   color: #0ff;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
 }
 
 /* Footer */
 footer {
   text-align: center;
-  padding: 30px;
-  font-size: 1rem;
-  background-color: rgba(0, 0, 40, 0.5);
+  padding: 40px 10px;
+  font-size: 0.95rem;
   color: #888;
 }
