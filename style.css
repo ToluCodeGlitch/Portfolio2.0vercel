@@ -1,121 +1,106 @@
-/* General Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-html, body {
-  scroll-behavior: smooth;
+body {
   font-family: 'Segoe UI', sans-serif;
-  color: #fff;
   background-color: #000;
-  overflow-x: hidden;
+  color: #fff;
+  line-height: 1.6;
+  position: relative;
+  z-index: 1;
 }
 
-/* Particle Background */
 #particles-js {
   position: fixed;
   width: 100%;
   height: 100%;
-  z-index: -1;
-  background: radial-gradient(ellipse at center, #0d1a2f 0%, #000000 100%);
-}
-
-/* Header */
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  background: rgba(0, 0, 30, 0.7);
-  position: sticky;
+  z-index: 0;
   top: 0;
-  z-index: 99;
+  left: 0;
 }
 
-.logo {
-  font-size: 1.8rem;
+header {
+  position: relative;
+  text-align: center;
+  padding: 5rem 2rem;
+  background: transparent;
+  z-index: 1;
+}
+
+.header-content {
+  z-index: 2;
+  position: relative;
+}
+
+.name {
+  font-size: 3rem;
   font-weight: bold;
-  color: #00aaff;
+  color: #00bfff;
+  text-shadow: 0 0 8px #00bfff;
 }
 
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 1.5rem;
+.tagline {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  color: #ccc;
+}
+
+nav {
+  margin-top: 2rem;
 }
 
 nav a {
+  color: #00bfff;
+  margin: 0 1rem;
   text-decoration: none;
-  color: #fff;
-  font-size: 1.1rem;
-  transition: color 0.3s ease;
+  font-weight: bold;
+  transition: color 0.3s;
 }
 
 nav a:hover {
-  color: #00aaff;
+  color: #fff;
 }
 
-/* Section Styling */
-.section {
-  padding: 5rem 2rem;
-  text-align: center;
-  min-height: 100vh;
+section {
+  padding: 4rem 2rem;
+  max-width: 900px;
+  margin: auto;
+  z-index: 2;
+  position: relative;
 }
 
 h2 {
-  font-size: 2.5rem;
-  margin-bottom: 1.5rem;
-  color: #00aaff;
-}
-
-p {
-  font-size: 1.2rem;
-  max-width: 700px;
-  margin: 0 auto 1.5rem;
-  line-height: 1.7;
-}
-
-/* Projects */
-.project-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
+  color: #00bfff;
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
 .project {
   background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 2rem;
-  width: 300px;
-  border-radius: 10px;
-  transition: transform 0.3s ease;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-left: 4px solid #00bfff;
+  border-radius: 5px;
 }
 
-.project:hover {
-  transform: translateY(-10px);
-  background: rgba(0, 170, 255, 0.1);
-}
-
-.project i {
-  color: #00aaff;
-  margin-bottom: 1rem;
+.project h3 {
+  color: #00bfff;
 }
 
 .project a {
-  display: inline-block;
-  margin-top: 1rem;
-  color: #00aaff;
-  text-decoration: none;
-  border: 1px solid #00aaff;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-  transition: background 0.3s ease;
+  color: #fff;
+  text-decoration: underline;
 }
 
-.project a:hover {
-  background: #00aaff;
-  color: #000;
+footer {
+  text-align: center;
+  padding: 2rem;
+  background: transparent;
+  color: #777;
+  z-index: 2;
+  position: relative;
+  font-size: 0.9rem;
 }
