@@ -3,30 +3,95 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Tolulope Oni | Cybersecurity Analyst & Web Designer</title>
+  <title>Tolulope Oni - Cybersecurity & Web Design</title>
   <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
+
+  <!-- Particle background -->
   <div id="particles-js"></div>
 
-  <header class="hero">
-    <h1>Tolulope Oni</h1>
-    <h2>Cybersecurity Analyst & Web Designer</h2>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
+  <!-- Navigation -->
+  <header>
+    <h1 class="logo">Tolulope Oni</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <section class="intro">
-    <h2>Welcome to My Portfolio</h2>
-    <p>I design secure, user-friendly tools and experiences that protect people and tell powerful digital stories.</p>
-    <a href="projects.html" class="cta-button">Explore My Work</a>
+  <!-- Home Section -->
+  <section id="home" class="section">
+    <div class="intro">
+      <h2>Cybersecurity Analyst & Web Designer</h2>
+      <p>I build secure tools and beautiful digital experiences.</p>
+    </div>
   </section>
 
-  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-  <script src="script.js"></script>
+  <!-- About Section -->
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>
+      I'm <strong>Tolulope Oni</strong>, a passionate cybersecurity analyst and frontend web designer.
+      My work combines security awareness with artistic and human-centered design.
+      Whether it’s protecting users or empowering recovery, I love building things that help people thrive.
+    </p>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="project-list">
+
+      <div class="project">
+        <i class="fas fa-feather-alt fa-2x"></i>
+        <h3>Short Story Hub</h3>
+        <p>A creative platform to upload and read fiction and true stories. Built for expression and connection.</p>
+        <a href="https://tolucodeglitch.github.io/short-story-hub/" target="_blank">View Project</a>
+      </div>
+
+      <div class="project">
+        <i class="fas fa-heartbeat fa-2x"></i>
+        <h3>Recovery Companion</h3>
+        <p>Mental health diary and mood tracker app for addiction recovery. Calming, secure, and supportive.</p>
+        <a href="https://tolucodeglitch.github.io/Recovery-Companion/index.html" target="_blank">View Project</a>
+      </div>
+
+      <div class="project">
+        <i class="fas fa-shield-alt fa-2x"></i>
+        <h3>PhishGuard</h3>
+        <p>Analyze suspicious links to detect phishing. A tool for safer browsing and security education.</p>
+        <a href="https://tolucodeglitch.github.io/Phishsleuth/" target="_blank">View Project</a>
+      </div>
+
+      <div class="project">
+        <i class="fas fa-key fa-2x"></i>
+        <h3>Password Strength Analyzer</h3>
+        <p>Check the strength of passwords with real-time feedback and visuals. Educational and helpful.</p>
+        <a href="https://tolucodeglitch.github.io/Password-Strength-Analyzer/" target="_blank">View Project</a>
+      </div>
+
+      <div class="project">
+        <i class="fas fa-fingerprint fa-2x"></i>
+        <h3>SHA-256 Hash Generator</h3>
+        <p>Generate secure SHA-256 hashes from text input. Useful for hashing and security demos.</p>
+        <a href="https://tolucodeglitch.github.io/SHA256-Hash-Tool/" target="_blank">View Project</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:wordsbytolu@gmail.com">wordsbytolu@gmail.com</a></p>
+  </section>
+
 </body>
 </html>
