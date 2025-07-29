@@ -1,4 +1,6 @@
-// Load the particles background
+// script.js
+
+// Load particles.js configuration from the JSON file
 particlesJS.load('particles-js', 'particles.json', function () {
-  console.log('Particles.js loaded successfully!');
+  console.log('particles.js config loaded');
 });
